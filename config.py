@@ -1,0 +1,10 @@
+symbol="ETH/USD"
+api_key="JAST-o7r8czlAuvUWXoHDLDE1x0Q7y3Lb75DXSPh"
+api_key_secret="2gvMVq_8t1m6RB_YDeZEzcziY8nB5TpqOsLVQsMi"
+sub_account=""
+exchange="ftx"
+quantity=0.001
+dcabound = -1
+sellbound = 0.5
+tg_token = "5412238941:AAEiFRQdqSFkJjwnBgfcdqX3QNg3CoTJl4w"
+tg_chat_id="-1001599550239"
