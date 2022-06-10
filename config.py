@@ -8,3 +8,4 @@ dcabound = -0.5
 sellbound = 0.5
 tg_token = ""
 tg_chat_id=""
+tg_enabled=False

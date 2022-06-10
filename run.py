@@ -207,7 +207,8 @@ def main() -> None:
 
 try:
     threading.Thread(target=job()).start() #start bot thread
-    threading.Thread(target=main()).start() #start TG bot thread
+    if tg_enabled == True:
+        threading.Thread(target=main()).start() #start TG bot thread
 except Exception as e: print(e)
 
 
