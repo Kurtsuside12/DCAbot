@@ -61,7 +61,7 @@ def createOrder():
 
     print(f"{len(orderIdAvgBuyPrice)}, {counter}")
     getPercDiff()
-
+    
 
     if len(orderIdAvgBuyPrice) == 0:
         print("First buy order...")
@@ -86,7 +86,7 @@ def createOrder():
         try:
             quantity = totalquantity
             neworder = exchange.createOrder(symbol,"market","buy",quantity)
-            sendMessage(f"DCA bought {quantity} for pair {symbol}, wallet balance is {getBalance()}, average buy price is {avgBuyPrice}")
+            sendMessage(f"DCA bought {quantity} for pair {symbol}\nWB:{round(getBalance())}\nABP:{round(avgBuyPrice)}\nIm trying to save your ass bitch!!!")
             time.sleep(2)
             getAvgPrice(neworder['info']['id'])
         except Exception as e: 
@@ -182,7 +182,7 @@ def getInfo(update: Update, context: CallbackContext) -> None:
     global perc
     global dcabound
     global sellbound
-    sendMessage(f"Percentage difference is {perc}, current sellbound is {sellbound}, current dca bound is {dcabound}")
+    sendMessage(f"Percentage difference is {round(perc,2)}, current sellbound is {round(sellbound,2)}, current dca bound is {round(dcabound,2)}")
     
 
 
